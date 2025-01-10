@@ -1,0 +1,9 @@
+# no environments files
+__pycache__
+.env
+.venv
+
+# no base file
+*.ini
+*.sql
+*.sqlite3   

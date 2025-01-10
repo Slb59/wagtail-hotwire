@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "wagtail hotwire"
+version = "0.0.1"
+description = "Try to make a mobile app with wagtail"
+authors = ["Osynia"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+wagtail = "^6.3.2"
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.13.2"
+black = "^24.10.0"
+pytest-django = "^4.9.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
