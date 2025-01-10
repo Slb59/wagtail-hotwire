@@ -3,6 +3,7 @@ install-lib:
 install-libdev:
 	poetry add --group dev isort
 	poetry add --group dev black
+	poetry add --group dev flake8
 	poetry add --group dev pytest-django
 
 quality:
