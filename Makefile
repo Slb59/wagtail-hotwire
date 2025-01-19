@@ -12,4 +12,8 @@ quality:
 	poetry run flake8 .
 
 runserver:
-	poetry run runserver
+	poetry run python manage.py runserver
+
+migrate:
+	poetry run python manage.py makemigrations
+	poetry run python manage.py migrate

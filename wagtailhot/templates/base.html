@@ -29,6 +29,10 @@
         {% block extra_css %}
         {# Override this in templates to add extra stylesheets #}
         {% endblock %}
+
+        <script type="module">
+            import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
+        </script>
     </head>
 
     <body class="{% block body_class %}{% endblock %}">

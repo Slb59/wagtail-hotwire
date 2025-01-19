@@ -50,7 +50,9 @@ WAGTAIL_APPS = [
     "taggit",
 ]
 
-PROJECT_APPS = [wagtailhot.users]
+PROJECT_APPS = [
+    "wagtailhot.users",
+]
 
 TIERS_APPS = []
 
@@ -120,7 +122,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-AUTH_USER_MODEL = "users.Users"
+AUTH_USER_MODEL = "users.WagUser"
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
