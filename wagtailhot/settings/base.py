@@ -54,7 +54,9 @@ PROJECT_APPS = [
     "wagtailhot.users",
 ]
 
-TIERS_APPS = []
+TIERS_APPS = [
+    "webpack_boilerplate",
+]
 
 INSTALLED_APPS = TIERS_APPS + PROJECT_APPS + DJANGO_APPS + WAGTAIL_APPS
 
@@ -145,7 +147,7 @@ STATICFILES_FINDERS = [
 ]
 
 STATICFILES_DIRS = [
-    os.path.join(PROJECT_DIR, "static"),
+    os.path.join(PROJECT_DIR, "frontend/build"),
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
@@ -202,3 +204,7 @@ WAGTAILDOCS_EXTENSIONS = [
     "xlsx",
     "zip",
 ]
+
+WEBPACK_LOADER = {
+    'MANIFEST_FILE': BASE_DIR / "frontend/build/manifest.json",
+}
